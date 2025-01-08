@@ -1,0 +1,305 @@
+/* Main Content Area */
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 24px;
+  background: #f6f8f9;
+  
+  
+}
+
+.main-header {
+  width: 550px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  gap: 0; /* No gap between child elements */
+  justify-content: space-between; /* Align items with space between them */
+  opacity: 1; /* Fully transparent (use 1 to make visible) */
+  margin-bottom: 50px;
+
+
+}
+
+.main-header h2{
+  width: 287px;
+  height: 36px;
+  margin-top: -5px;
+  
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1A1C1E;
+
+
+
+}
+
+.main-header p{
+  width: 200px;
+  height: 21px;
+ 
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #6C7278;
+
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  position: relative; /* Ensure the line is placed directly below */
+  width: 100%;
+  height: 77px;
+}
+
+.filters::after {
+  content: "";
+  position: absolute;
+  width: 100%px;
+  border: 1px 0px 0px 0px;
+  margin-bottom: -20px;
+
+  bottom: -10px; /* Adjust to align exactly below filters */
+  left: 0;
+  width: 100%; /* Full width line */
+  height: 1px;
+  background: #ddd; /* Light gray color for the line */
+}
+
+.filter-button {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #1A1C1E;
+  width: 174px;
+  height: 77px;
+  border-radius: 7px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Red Hat Display;
+  gap: 4px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: 1px solid #DCE4E8 
+  
+
+}
+
+.filter-button.active {
+  background:white;
+  border: 1px solid #F4D03F;
+  color: black;
+  width: 174px;
+}
+
+.filter-button:hover {
+  background: rgb(255, 249, 204); /* Light orange */
+}
+
+.filter-icon {
+  font-size: 20px; /* Adjust icon size */
+  margin-bottom: auto;
+  width: 16.67px;
+  height: 16.53px;
+  top: 1.73px;
+  left: 1.67px;
+  margin-right: 80%;
+  
+}
+
+.filter-content {
+  display: flex;
+  align-items: left; /* Center align the text */
+  margin-top: auto; /* Push content to the bottom of the button */
+}
+
+.filter-text {
+  color: inherit; /* Inherit color from button */
+
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.filter-subtext {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6C7278;
+  margin-left: 10px;
+  margin-top: 4px;
+
+  font-family: Red Hat Display;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.88px;
+  letter-spacing: -0.01em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+/* Restaurant Grid */
+.restaurant-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts grid columns */
+  gap: 12px;
+  margin-top: 20px; /* Add spacing from the line above */
+
+}
+
+
+/* Restaurant Card */
+.restaurant-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 215px;
+  opacity: 1px;
+  
+}
+
+.restaurant-card:first-child {
+  border: 1px solid #F4D03F; /* Highlight with an orange border */
+  box-shadow: 0 6px 15px rgba(255, 140, 66, 0.2); /* Add a shadow for emphasis */
+  transform: scale(1.02); /* Slightly enlarge the card */
+}
+
+
+.restaurant-card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restaurant-details {
+  padding: 8px 16px 8px;
+  text-align: left;
+   
+}
+
+.restaurant-details h3 {
+  color: #1A1C1E;
+  margin: 0;
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.restaurant-details p {
+  margin: 4px 0 0;
+  color: #6c7278;
+  height: 16px;
+  font-family: Red Hat Display;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.88px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media (max-width: 768px) {
+  /* Main Content Area */
+.main-content {
+  padding: 12px;
+  
+}
+
+
+/* Filters Section */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.filters::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Filter Button */
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #dce4e8;
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.3s ease, color 0.3s ease;
+  width: 160px;
+  height: 70px;
+}
+
+.filter-button.active {
+  border-color: #f4d03f;
+  color: black;
+}
+
+/* Restaurant Grid */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 16px;
+}
+}
+
+
+
+
+

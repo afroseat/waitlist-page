@@ -1,0 +1,74 @@
+
+/* General Layout Fixes */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Overall App Layout */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh; /* Full height of the viewport */
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+}
+
+/* Orange Divider (Full Background) */
+.orange-divider {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(180deg, #f4d03f 0%, #f7da59 50%, #fae582 100%);
+  padding: 60px 0px 0px 60px; /* Inner spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: row; /* Align Sidebar and MainContent side by side */
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack elements vertically */
+
+  }
+
+  .orange-divider {
+    padding: 40px; /* Reduce padding */
+    flex-direction: row; /* Stack sidebar and main content */
+    height: auto; /* Adjust height */
+  }
+
+  .waitlist-page {
+    padding: 32px 16px; /* Reduce padding for smaller screens */
+    margin: 0; /* Remove unnecessary margins */
+    max-width: 100%; /* Allow full width */
+    height: auto; /* Allow height to adjust */
+    box-shadow: none; /* Optional: Remove shadows for a cleaner look */
+  }
+
+  .sidebar {
+    width: 20%; /* Take full width */
+    height: auto; /* Adjust height */
+    padding: 16px; /* Reduce padding */
+    margin-bottom: 16px; /* Add spacing below sidebar */
+    box-shadow: none; /* Optional: Remove sidebar shadow */
+  }
+
+  .main-content {
+    width: 80%; /* Full width */
+    padding: 10px; /* Adjust padding */
+    gap: 8px; /* Reduce gaps */
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
