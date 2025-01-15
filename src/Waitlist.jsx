@@ -47,7 +47,7 @@ const Waitlist = () => {
       <div className="launching-soon">LAUNCHING SOON!</div>
       <div className="description">
         <h1>
-          Sare Your Unique Recipes and Cooking, With a <span className="highlight">Wider</span> Audience
+          Share Your Unique Recipes and Cooking, With a <span className="highlight">Wider</span> Audience
         </h1>
       </div>
       <div className="content">
