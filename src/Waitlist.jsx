@@ -47,14 +47,13 @@ const Waitlist = () => {
       <div className="launching-soon">LAUNCHING SOON!</div>
       <div className="description">
         <h1>
-          Discover Unique, Talented Chefs and <span className="highlight">Nearby</span> Culinary Gems
+          Sare Your Unique Recipes and Cooking, With a <span className="highlight">Wider</span> Audience
         </h1>
       </div>
       <div className="content">
         <p>
-          Ready to explore the best culinary experiences around you? Discover talented chefs and hidden
-          restaurant gems right in your neighborhood! Join our waitlist today to be the first to taste
-          exclusive dishes and connect with local culinary creators!
+          Expand your business and earn more. What are you waiting for?
+          Join our waitlist today!
         </p>
       </div>
       <div className="form">

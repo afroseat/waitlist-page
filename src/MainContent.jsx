@@ -14,32 +14,32 @@ function MainContent() {
   const restaurantData = [
     {
       name: "Hogis Restaurant",
-      address: "Marian road, Calabar",
+      address: "Canterbury, Kent",
       image: image1,
     },
     {
       name: "Foodie Palace",
-      address: "Marian road, Calabar",
+      address: "Mayfair, London",
       image: image2,
     },
     {
       name: "Taste Hub",
-      address: "Main Street, Abuja",
+      address: "Farringdon, London",
       image: image3,
     },
     {
       name: "The Grill Spot",
-      address: "Main Street, Abuja",
+      address: "Kensington, London",
       image: image4,
     },
     {
       name: "Dine & Wine",
-      address: "Marian road, Calabar",
+      address: "Portland Street, Manchester",
       image: image5,
     },
     {
       name: "Urban Bites",
-      address: "Marian road, Calabar",
+      address: "Todd Street, Manchester",
       image: image6,
     },
     
@@ -49,7 +49,7 @@ function MainContent() {
     <main className="main-content">
       <header className="main-header">
         <h2>Let's do your best today 🚀</h2>
-        <p className="date">December 18, 2023</p>
+        <p className="date">January 01, 2025</p>
       </header>
       <div className="filters">
         <button className="filter-button active">
