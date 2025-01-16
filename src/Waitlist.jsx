@@ -20,7 +20,10 @@ const Waitlist = () => {
       .send(
         'service_tgujj3h', // Replace with your EmailJS Service ID
         'template_0sr6tsr', // Replace with your EmailJS Template ID
-        { user_email: email }, // Pass user email as the template variable
+        { user_email: email, 
+          to_name: 'Afroseat',
+          from_email: email,
+          to_email:'aprincedev@gmail.com',},
         'A3uxDl-JFy5dyfLTR' // Replace with your EmailJS Public Key
       )
       .then(
